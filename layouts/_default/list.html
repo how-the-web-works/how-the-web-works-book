@@ -1,24 +1,18 @@
 {{ define "main" }}
-  <ul class="breadcrumbs">
-    {{ range .Ancestors.Reverse }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
+  {{ partial "breadcrumbs.html" . }}
 
   <h1>{{ .Title }}</h1>
 
   {{ .Content }}
 
-  <h2>Chapters</h2>
-  {{ range $page := .Pages }}
-    <ul>
-      <li><a href="{{ $page.RelPermalink }}">
-        {{ $page.Title }}
-      </a></li>
-    </ul>
+  {{ if .Pages }}
+    <h2>Chapters</h2>
+    {{ range $page := .Pages }}
+      <ul>
+        <li><a href="{{ $page.RelPermalink }}">
+          {{ $page.Title }}
+        </a></li>
+      </ul>
+    {{ end }}
   {{ end }}
 {{ end }}

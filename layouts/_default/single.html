@@ -1,13 +1,5 @@
 {{ define "main" }}
-  <ul class="breadcrumbs">
-    {{ range .Ancestors.Reverse }}
-    <li>
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
+  {{ partial "breadcrumbs.html" . }}
 
   <h1>{{ .Title }}</h1>
 

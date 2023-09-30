@@ -2,14 +2,42 @@
   font-family: sans-serif;
 }
 
+pre {
+  padding: 10px;
+}
+
+pre > code span {
+  font-family: monospace;
+}
+
+pre > code::before {
+  color: #888;
+  content: ' Language: ' attr(data-lang);
+  display: inline-block;
+  font-size: 0.7em;
+  padding-bottom: 10px;
+}
+
 ul.breadcrumbs {
+  background: white;
+  border-bottom: 1px solid black;
+  height: 2rem;
+  left: 0;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.breadcrumbs + * {
+  margin-top: 3.5rem;
 }
 
 ul.breadcrumbs > li:first-child::before {
-  content: 'Breadcrumbs: ';
+  content: 'Navigation: ';
 }
 
 ul.breadcrumbs > li {
