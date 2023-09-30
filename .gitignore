@@ -1,0 +1,5 @@
+# Keep this alphabetically sorted
+.DS_Store
+.vscode/
+public/
+.hugo_build.lock
