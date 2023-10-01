@@ -2,6 +2,18 @@
   font-family: sans-serif;
 }
 
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption > p {
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
 pre {
   padding: 10px;
 }
