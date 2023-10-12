@@ -3,16 +3,17 @@ title: How the web works
 weight: 1
 ---
 
-Computer networks started to be used back in the 1950s.
-ARPANET, the precursor of the internet, initially connected four nodes in 1969.
-Connecting computers became something common in the 80s and 90s with the concept of the BBS, or bulletin board system.
-The evolution of all these systems, and all the iterations we went through, culminated into what we call today as the Internet.
+Hardware and software evolved exponentially since the 1950s when the first computer was created.
+Knowledge develops faster as we build on the "shoulders of giants".
+But sometimes, we need to get back down and understand what's going on so that we can rethink our foundations, and build stronger, more advanced paradigms for others to build on top of.
 
-The Internet is based on multiple standards created and managed by many organizations around the world.
-These standards is what hold this network of countless computers talking to each other together.
-In this book, you’ll learn everything that happens inside servers that run the Internet.
-The standards, the protocols, the details, everything, from scratch.
+Most of the new software developers are learning to program with frameworks and tools from previous generation without understanding what's happening behind the scenes.
+And they struggle with the smallest of the problems because of the lack of context and not knowing where to look for the solution.
+A lot don't even know how or what to "google for" when something breaks.
 
-From the moment you type an address on your browser to the moment when the request reaches the server and all the magic starts to happen.
-You’ll write your own HTTP server, your own protocols and understand all there is under the hood.
-Then you'll learn how to use this knowledge to build the modern patterns that permeate the complex applications that we depend on a day-to-day basis.
+Don't get me wrong, frameworks are great for getting things up and running fast.
+But they are solutions to problems, and not understaing the problems, make it really hard to understand the solutions.
+
+The intent of this book is to be the path where you'll learn about all the old problems, and then build the solutions to solve them.
+The idea is to build things from scratch: from a web server to a web browser.
+All the bits and pieces that exist to make the internet works.
