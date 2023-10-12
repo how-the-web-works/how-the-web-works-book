@@ -1,3 +1,14 @@
+:root {
+  --page-width: 1024px;
+  --page-margin: 0 auto;
+}
+
+body {
+  margin: var(--page-margin);
+  max-width: var(--page-width);
+  position: relative;
+}
+
 * {
   font-family: sans-serif;
 }
@@ -5,6 +16,10 @@
 figure {
   margin: 0;
   text-align: center;
+}
+
+figure > img {
+  max-width: var(--page-width);
 }
 
 figcaption > p {
@@ -34,14 +49,13 @@ ul.breadcrumbs {
   background: white;
   border-bottom: 1px solid black;
   height: 2rem;
-  left: 0;
   list-style: none;
-  margin: 0;
+  margin: var(--page-margin);
   padding: 0;
   padding-top: 1rem;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: var(--page-width)
 }
 
 ul.breadcrumbs + * {

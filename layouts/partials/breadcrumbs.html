@@ -1,6 +1,6 @@
 {{ if .Ancestors }}
   <ul class="breadcrumbs">
-    {{ range .Ancestors.Reverse }}
+    {{ range last 4 .Ancestors.Reverse }}
     <li>
       <a href="{{ .RelPermalink }}">
         {{ .Title }}
